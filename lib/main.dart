@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './screens/bmr_calculator_screen.dart';
 import './screens/calculator_screen.dart';
 import './screens/splash_screen.dart';
 
@@ -14,13 +15,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: Colors.red,
+        primarySwatch: Colors.red,
         accentColor: Colors.yellow,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: SplashScreen(),
       routes: {
         CalculatorScreen.routeName: (ctx) => CalculatorScreen(),
+        BmrCalculatorScreen.routeName: (ctx) => BmrCalculatorScreen(),
       },
     );
   }
